@@ -1,0 +1,21 @@
+# Ignorar arquivos temporários
+*.log
+*.tmp
+
+*.htm
+*.sln
+*.csproj
+
+.vsconfig
+
+# Ignorar diretórios do Unity/IDE
+Library/
+Logs/
+Temp/
+UserSettings/
+.vscode/
+.vs/
+.git/
+
+# Ignorar arquivos de build
+Build/
