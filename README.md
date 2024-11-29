@@ -6,7 +6,7 @@
 - Prefabs for enemy/hazards and interactables (coins, key, lock, ..)
 - Includes 2 levels with distinct themes (~ summer/winter related)
 - Applied force when jumping on trampoline (Level 1)
-- Has 1 heart per level that increases the score a lot (requires a key)
+- Map exploration: 1 heart per level that increases the score a lot (requires a key)
 - Main Menu
 - Pause Menu (by pressing 'Esc')
 - Coin and key/heart animations
@@ -22,6 +22,6 @@
 - Save Game State (for the Continue option of Pause Menu)
 - Max Score in Main Menu (at the bottom)
 - Background music
-- Animation sounds
 - Character movement sound
+- Animation sounds
 - Death sound
