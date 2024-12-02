@@ -14,7 +14,7 @@ public class SwitchSprite : MonoBehaviour {
         sr = GetComponent<SpriteRenderer>();
 
         if (sr == null || sprite1 == null || sprite2 == null) {
-            Debug.LogError("SpriteRenderer or sprites not assigned!");
+                Debug.LogError("SpriteRenderer or sprites not assigned!");
             return;
         }
 

@@ -1,21 +1,28 @@
-# Ignorar arquivos temporários
+# temp files
 *.log
 *.tmp
 
 *.htm
 *.sln
 *.csproj
-
 .vsconfig
 
-# Ignorar diretórios do Unity/IDE
+# directories
 Library/
 Logs/
 Temp/
 UserSettings/
+
+Build/
 .vscode/
 .vs/
 .git/
 
-# Ignorar arquivos de build
-Build/
+*.meta
+
+
+# scripts
+/Assets/Scripts/GameManagercopy.cs
+/Assets/Scripts/PlayerScorecopy.cs
+
+

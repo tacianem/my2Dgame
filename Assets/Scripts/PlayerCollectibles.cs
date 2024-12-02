@@ -8,6 +8,10 @@ public class PlayerCollectibles : MonoBehaviour {
         hasKey = true;
     }
 
+    public void LoseKey () {
+        hasKey = false;
+    }
+
     public void UseKeyOnLock () {
         hasKey = false;
         gameObject.GetComponent<DisplayMessage>().ShowMessage("Key used!");

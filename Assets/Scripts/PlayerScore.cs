@@ -2,25 +2,21 @@ using UnityEngine;
 using TMPro;
 
 public class PlayerScore : MonoBehaviour {
-    
-    public static int score = 0;
-    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI scoreText;  // Reference to the UI Text for score display
 
     void Start() {
-        scoreText.text = "Score: " + score;
+        if (scoreText != null) {
+            scoreText.text = "Score: " + ScoreKeeper.Instance.GetScore();
+        }
     }
 
-    public void AddScore(int amount) {
-        score += amount;
-        UpdateScore();
+    public void AddScore(int amount){
+        ScoreKeeper.Instance.AddScore(amount);
+        UpdateScoreUI();
     }
 
-    private void UpdateScore() {
-        scoreText.text = "Score: " + score;
-    }
-
-    public void ResetScore() {
-        score = 0;
+    private void UpdateScoreUI() {
+        scoreText.text = "Score: " + ScoreKeeper.Instance.GetScore();
     }
 
 }

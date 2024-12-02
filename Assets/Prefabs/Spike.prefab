@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4821593243887689256}
   - component: {fileID: 7566887200331784885}
   m_Layer: 0
-  m_Name: Stalactite
+  m_Name: Spike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

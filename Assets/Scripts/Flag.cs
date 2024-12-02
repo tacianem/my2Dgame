@@ -11,11 +11,12 @@ public class Flag : MonoBehaviour {
         if(collision.CompareTag("Player")) {
             // If this is the final level, go to menu
             if (finalLevel) {
-                collision.GetComponent<PlayerScore>().ResetScore();
+                ScoreKeeper.Instance.ResetScore();
                 SceneManager.LoadScene("MainMenu");
             }
             // Otherwise load up next level
             else {
+                ScoreKeeper.Instance.SetPreviousScore();
                 SceneManager.LoadScene(nextLevel);
             }
         }
