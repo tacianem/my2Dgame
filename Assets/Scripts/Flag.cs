@@ -11,7 +11,7 @@ public class Flag : MonoBehaviour {
         if(collision.CompareTag("Player")) {
             // If this is the final level, go to menu
             if (finalLevel) {
-                ScoreKeeper.Instance.ResetScore();
+                ScoreKeeper.Instance.ResetScores();
                 SceneManager.LoadScene("MainMenu");
             }
             // Otherwise load up next level

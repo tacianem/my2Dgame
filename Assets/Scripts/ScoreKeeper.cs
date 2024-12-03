@@ -31,6 +31,11 @@ public class ScoreKeeper : MonoBehaviour { // Keeps track of the score in betwee
         score = 0;
     }
 
+    public void ResetScores() {
+        score = 0;
+        previousScore = 0;
+    }
+
     public void SetPreviousScore() { 
        previousScore = score;
     // Debug.Log(previousScore);

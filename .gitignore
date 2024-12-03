@@ -1,7 +1,6 @@
 # temp files
 *.log
 *.tmp
-
 *.htm
 *.sln
 *.csproj
@@ -12,17 +11,13 @@ Library/
 Logs/
 Temp/
 UserSettings/
-
 Build/
 .vscode/
 .vs/
 .git/
 
-*.meta
-
 
 # scripts
-/Assets/Scripts/GameManagercopy.cs
-/Assets/Scripts/PlayerScorecopy.cs
+
 
 

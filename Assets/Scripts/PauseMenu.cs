@@ -5,7 +5,7 @@ using TMPro;
 public class PauseMenu : MonoBehaviour {
 
     public void OnContinueButton () { // SAVED STATE!!
-        GameManager.Instance.LoadState();
+        GameManager.Instance.LoadStateFromMenu();
     }
 
     public void OnRestartButton () {
@@ -14,13 +14,15 @@ public class PauseMenu : MonoBehaviour {
             OnNewGameButton();
         else {
             ScoreKeeper.Instance.UpdateScore(ScoreKeeper.Instance.GetPreviousScore());
+            GameManager.Instance.RestartDestroyed();
             SceneManager.LoadScene(lastScene); // Restarts current game level
         }
     }
 
     public void OnNewGameButton () {
+        ScoreKeeper.Instance.ResetScores();
+        GameManager.Instance.RestartDestroyed();
         SceneManager.LoadScene("Level1"); // First game scene
-        ScoreKeeper.Instance.ResetScore();
     }
 
     public void OnQuitButton () {

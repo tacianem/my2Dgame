@@ -9,10 +9,10 @@ public class Lock : MonoBehaviour {
             
             if (PlayerCollectibles.hasKey) {
                 playerCollectible.UseKeyOnLock();
+                GameManager.Instance.RegisterDestroyedObject(gameObject.name);
                 Destroy(gameObject);
             }
         }
-
     }
 
 }
