@@ -9,6 +9,8 @@ public class Flag : MonoBehaviour {
     private void OnTriggerEnter2D (Collider2D collision) {
 
         if(collision.CompareTag("Player")) {
+            GameManager.Instance.SetMaxScore(ScoreKeeper.Instance.GetScore());
+            
             // If this is the final level, go to menu
             if (finalLevel) {
                 ScoreKeeper.Instance.ResetScores();

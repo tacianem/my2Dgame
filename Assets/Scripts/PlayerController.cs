@@ -27,9 +27,10 @@ public class PlayerController : MonoBehaviour { //Responsible for player movemen
 
     public void GameOver () { // Reloads current scene
         gameObject.GetComponent<PlayerCollectibles>().LoseKey();
+        GameManager.Instance.RestartDestroyed();
+        GameManager.Instance.SetMaxScore(ScoreKeeper.Instance.GetScore());
         ScoreKeeper.Instance.UpdateScore(ScoreKeeper.Instance.GetPreviousScore());
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        GameManager.Instance.RestartDestroyed();
     }
 
 }

@@ -10,8 +10,8 @@
 - Main Menu
 - Pause Menu (by pressing 'Esc')
 - Coin and key/heart animations
-- Save Game State (for the Continue option of Pause Menu)
-
+- Save Game State (for the Continue option on Pause Menu)
+- Max Score shown in Main Menu after the game is played at least once
 
 <strong>Rules:</strong>
 - When the player dies they only lose the points acquired in that particular level
@@ -21,7 +21,6 @@
 
 
 <strong>>> To be implemented:</strong>
-- Max Score in Main Menu (at the bottom)
 - Background music
 - Character movement sound
 - Animation sounds

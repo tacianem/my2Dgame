@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
 using System.Collections.Generic;
 
 [System.Serializable]
@@ -21,6 +20,7 @@ public class GameManager : MonoBehaviour {
     private GameObject player;
     private HashSet<string> destroyedObjs = new HashSet<string>();
 
+    public int maxScore = 0;
 
     private void Awake() {
         if (Instance == null) { // Ensure there's only one GameManager
@@ -45,6 +45,11 @@ public class GameManager : MonoBehaviour {
                 StartCoroutine(LoadState());
             }
         }
+    }
+
+    public void SetMaxScore(int score) {
+        if(score > maxScore)
+            maxScore = score;
     }
 
     public void LoadStateFromMenu() {
@@ -76,12 +81,12 @@ public class GameManager : MonoBehaviour {
 
     public void RestartDestroyed () {
         destroyedObjs = new HashSet<string>();
-        Debug.Log("It's now empty!!");
+        // Debug.Log("It's now empty!!");
     }
 
     public void RegisterDestroyedObject(string objName) {
         destroyedObjs.Add(objName);
-        Debug.Log(objName);
+        // Debug.Log(objName);
     }
 
     private void DestroyObjects () {
@@ -92,7 +97,7 @@ public class GameManager : MonoBehaviour {
             
             if (gameObj != null) {
                 Destroy(gameObj); // Destroys the object
-                Debug.Log("Destroyed " + obj);
+                // Debug.Log("Destroyed " + obj);
             }
         }
     }
