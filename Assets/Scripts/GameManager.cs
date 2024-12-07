@@ -33,10 +33,11 @@ public class GameManager : MonoBehaviour {
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.Escape)) { // Checks if the Escape key is pressed
+        string scene = SceneManager.GetActiveScene().name;
+        if (Input.GetKeyDown(KeyCode.Escape) && scene != "MainMenu") { // Checks if the Escape key is pressed
             // If in gameplay, return to menu
-            if (SceneManager.GetActiveScene().name != "PauseMenu") {
-                lastScene = SceneManager.GetActiveScene().name; // Stores last scene
+            if (scene != "PauseMenu") {
+                lastScene = scene; // Stores last scene
                 player = GameObject.FindWithTag("Player"); // Sets the player instance
                 SaveState(player.transform.position, player.GetComponent<SpriteRenderer>().flipX, ScoreKeeper.Instance.GetScore());
                 SceneManager.LoadScene("PauseMenu"); // Loads pause menu
@@ -84,7 +85,7 @@ public class GameManager : MonoBehaviour {
         // Debug.Log("It's now empty!!");
     }
 
-    public void RegisterDestroyedObject(string objName) {
+    public void AddDestroyedObject(string objName) {
         destroyedObjs.Add(objName);
         // Debug.Log(objName);
     }

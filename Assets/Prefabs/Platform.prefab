@@ -107,7 +107,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5bce9d89b84d23a48b7516930c5d4184, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -128,7 +128,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 5bce9d89b84d23a48b7516930c5d4184, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -176,8 +176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88130a8d2ca2ce48a87f2d38b3c30ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1.2
-  moveOffset: {x: 6, y: 0, z: 0}
+  moveSpeed: 2
+  moveOffset: {x: 0, y: 6.7, z: 0}
 --- !u!114 &5789030273106067649
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -25,11 +25,13 @@ public class PauseMenu : MonoBehaviour {
         GameManager.Instance.SetMaxScore(ScoreKeeper.Instance.GetScore());
         ScoreKeeper.Instance.ResetScores();
         GameManager.Instance.RestartDestroyed();
-        SceneManager.LoadScene("Level1"); // First game scene
+        SceneManager.LoadScene(1); // First game scene
     }
 
     public void OnQuitButton () {
-        SceneManager.LoadScene("MainMenu");
+        ScoreKeeper.Instance.ResetScores();
+        GameManager.Instance.RestartDestroyed();
+        SceneManager.LoadScene(0); // Main Menu
     }
 
 }
