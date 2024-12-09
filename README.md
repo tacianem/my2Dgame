@@ -1,7 +1,7 @@
 <h3>My2Dgame is my first Unity <i>platformer</i> game! :D</h3>
 
 <strong>Features:</strong>
-- Player movement (Arrow keys on the keayboard) and physics
+- Player movement (Arrow keys on the keyboard) and physics
 - Collisions (both hard and triggered)
 - Sprite flip for the character when moving to the sides
 - Prefabs for enemy/hazards and interactables (coins, key, lock, ..)

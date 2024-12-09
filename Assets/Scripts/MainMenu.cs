@@ -10,15 +10,20 @@ public class MainMenu : MonoBehaviour {
     public Button quitButton;
 
     void Start() {
+        playButton.onClick.AddListener(OnPlayButton);
+        quitButton.onClick.AddListener(OnQuitButton);
+
+        ShowMaxScore();
+    }
+
+    private void ShowMaxScore () {
         int maxScore = GameManager.Instance.maxScore;
         if (maxScore != 0) {
             maxScoreText.text = "Max Score: " + maxScore;
             maxScoreText.gameObject.SetActive(true);
         }
-
-    playButton.onClick.AddListener(OnPlayButton);
-    quitButton.onClick.AddListener(OnQuitButton);
-
+        else
+            maxScoreText.gameObject.SetActive(false);
     }
 
     // Called when we click the "Play" button

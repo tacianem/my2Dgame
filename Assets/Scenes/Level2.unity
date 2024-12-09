@@ -707,11 +707,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5924062667064902408, guid: 585ac0047ede1de418157a1f2bb7cd7a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.93
+      value: 17.01
       objectReference: {fileID: 0}
     - target: {fileID: 5924062667064902408, guid: 585ac0047ede1de418157a1f2bb7cd7a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.13
+      value: 1.65
       objectReference: {fileID: 0}
     - target: {fileID: 5924062667064902408, guid: 585ac0047ede1de418157a1f2bb7cd7a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -746,8 +746,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8221924261689564248, guid: 585ac0047ede1de418157a1f2bb7cd7a, type: 3}
+      propertyPath: moveSpeed
+      value: 2.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221924261689564248, guid: 585ac0047ede1de418157a1f2bb7cd7a, type: 3}
       propertyPath: moveOffset.x
-      value: -7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8221924261689564248, guid: 585ac0047ede1de418157a1f2bb7cd7a, type: 3}
       propertyPath: moveOffset.y
@@ -3376,11 +3380,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5924062667064902408, guid: 585ac0047ede1de418157a1f2bb7cd7a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.21
+      value: 16.37
       objectReference: {fileID: 0}
     - target: {fileID: 5924062667064902408, guid: 585ac0047ede1de418157a1f2bb7cd7a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.45
+      value: -0.09
       objectReference: {fileID: 0}
     - target: {fileID: 5924062667064902408, guid: 585ac0047ede1de418157a1f2bb7cd7a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3415,8 +3419,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8221924261689564248, guid: 585ac0047ede1de418157a1f2bb7cd7a, type: 3}
+      propertyPath: moveSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221924261689564248, guid: 585ac0047ede1de418157a1f2bb7cd7a, type: 3}
       propertyPath: moveOffset.x
-      value: 6.7
+      value: -6.55
       objectReference: {fileID: 0}
     - target: {fileID: 8221924261689564248, guid: 585ac0047ede1de418157a1f2bb7cd7a, type: 3}
       propertyPath: moveOffset.y
